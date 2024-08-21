@@ -1,19 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3(Rinterio)</title>
 
+    <!-- Google font "Manrope" CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- daisyUI CSS file + Tailwind CSS CDN script: -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Kit CDN -->
+    <script src="https://kit.fontawesome.com/7554a6c3c1.js" crossorigin="anonymous"></script>
+    <!-- Custom Tailwind CSS -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandcolor: '#ABEF5F',
+            },
+            fontFamily: {
+              manrope: ['Manrope'],
+            }
+
+          }
+        }
+      }
+    </script>
 </head>
 
-<body>
-    <header>
+<body class="font-manrope">
+  
+    <header class="bg-gradient-to-b from-[#f4f4f4] to-[#ffffff]">
+      <!-- Navbar start here -->
+        <nav class="p-6 container m-auto ">
+            <div class="navbar">
+              <!-- Nav Brand Name -->
+              <div class="navbar-start cursor-pointer">
+                <div class="mr-2 flex w-8 h-8 p-2 items-center justify-center bg-brandcolor rounded-full">
+                  <i class=" fa-solid fa-arrow-right -rotate-45"></i>
+                </div>
+                <a class="text-3xl font-bold">Rinterio</a>
+              </div>
 
+              <!-- Nav menu Items  -->
+              <div class="navbar-center hidden lg:hidden xl:flex ">
+                <ul class="menu menu-horizontal px-1 font-bold ">
+                  <li><a class="rounded-full">Home</a></li>
+                  <li><a class="opacity-70 rounded-full">Service</a></li>
+                  <li><a class="opacity-70 rounded-full">Portfolio</a></li>
+                  <li><a class="opacity-70 rounded-full">Blog</a></li>
+                  <li><a class="opacity-70 rounded-full">Contact Us</a></li>
+                </ul>
+              </div>
+
+              <!-- Nav buttons -->
+              <div class="navbar-end">
+                <!-- Search Button -->
+                <div class="mr-2 btn bg-white rounded-full hidden lg:flex"">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <!-- Cart Button -->
+                <div class="mr-2 btn bg-white rounded-full hidden lg:flex">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <!-- Booking Button -->
+                 <div>
+                  <a class="btn font-extrabold bg-brandcolor rounded-full hidden lg:flex ">Book Consult
+                    <div class="flex w-8 h-8 p-2 items-center justify-center bg-black text-white rounded-full">
+                      <i class=" fa-solid fa-arrow-right -rotate-45"></i>
+                    </div>
+                  </a>
+                 </div>
+                 <!-- Mobile Menu Button -->
+                <div>
+                  <div tabindex="0" role="button" class="btn ml-2 bg-white rounded-full xl:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+                </div>
+            </div>
+
+        </nav>
     </header>
+
     <main>
 
     </main>
