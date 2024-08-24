@@ -31,8 +31,10 @@
     }
   </script>
 </head>
+
 <!-- Body start -->
 <body class="font-manrope">
+
     <!-- Header start -->
     <header class="bg-gradient-to-b from-bgColor to-white">
       <!-- Navbar start -->
@@ -153,8 +155,8 @@
               </div>
             </div>
             <!-- about section image-->
-            <div class="overflow-hidden -mb-24 lg:mb-0 lg:max-h-[525px]" >
-              <img class="object-cover w-full h-3/4 lg:h-full rounded-2xl" src="assets/Rectangle.png" alt="">
+            <div class="overflow-hidden -mb-24 md:-mb-72 lg:mb-0 lg:max-h-[525px]" >
+              <img class="object-cover w-full h-3/4 md:h-3/5 lg:h-full rounded-2xl" src="assets/Rectangle.png" alt="">
             </div>
           </div>
         </div>
@@ -203,6 +205,85 @@
         </div>
        </section>
 
+      <!-- Portfolio section start -->
+      <section class="bg-white">
+        <div class="grid grid-cols-1 gap-8 px-5 lg:px-10 py-8 lg:py-24 container m-auto">
+          <!-- Portfolio section content -->
+          <div class=" flex flex-col items-center text-center">
+            <div class="lg:flex mb-4">
+              <a class="px-6 py-2 cursor-pointer font-extrabold rounded-full bg-[#ABEF5F80]"><i class="fa-solid fa-arrow-right"></i> Explore our Latest works</a>
+            </div>
+            <h1 class="text-2xl lg:text-4xl font-extrabold mb-4 lg:mb-6">Our Latest Portfolio</h1>
+            <p class="lg:max-w-2xl text-textColor font-medium">
+              Explore our latest portfolio showcasing innovative designs, meticulously crafted spaces, and successful projects that highlight our commitment to excellence.
+            </p>
+          </div>
+          <!-- Portfolio section cards -->
+          <div class="grid gap-6">
+            <!-- Top container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+              <!-- Top card one-->
+              <div class="grid grid-cols-5 md:col-span-2 lg:col-span-4 md:items-center gap-6 p-6 border border-slate-200 rounded-2xl shadow-xl shadow-slate-100">
+                <!-- Top card one Image -->
+                <div class="col-span-5 md:col-span-2">
+                  <img class="object-cover w-full h-48 rounded-3xl" src="assets/img1.png" alt="">
+                </div>
+                <!-- Top card one Content -->
+                <div class="col-span-5 md:col-span-3">
+                  <h2 class="text-xl font-bold">Commercial</h2>
+                  <p class="text-textColor font-medium my-4">Designing cutting-edge commercial spaces that prioritize functionality, aesthetics, and user experience, tailored to meet the unique needs of your business.</p>
+                  <!-- Top card one Button -->
+                  <div class="flex items-center gap-2">
+                    <a class="font-extrabold bg-white border-none rounded-full flex">View Details</a>
+                    <div class="flex w-8 h-8 p-2 items-center justify-center bg-brandColor rounded-full">
+                      <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Top card two-->
+              <div class="md:col-span-1 lg:col-span-2 p-6 border border-slate-200 rounded-3xl shadow-xl shadow-slate-100">
+                  <img class="object-cover w-full h-48 rounded-3xl" src="assets/img2.png" alt="">
+              </div>
+              <!-- Top card three-->
+              <div class="md:col-span-1 lg:hidden p-6 border border-slate-200 rounded-3xl shadow-xl shadow-slate-100">
+                  <img class="object-cover w-full h-48 rounded-3xl" src="assets/img5.png" alt="">
+              </div>
+            </div>
+            <!-- Bottom container -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <!-- Bottom Card One-->
+              <div class="order-2 lg:order-1 md:col-span-2 lg:col-span-1 p-6 border border-slate-200 rounded-3xl shadow-xl shadow-slate-100">
+                <img class="object-cover w-full h-48 rounded-3xl" src="assets/img3.png" alt="">
+              </div>
+              <!-- Bottom card two -->
+              <div class="order-1 lg:order-2 grid grid-cols-2 md:col-span-4 lg:col-span-2 md:items-center gap-6 p-6 border border-slate-200 rounded-2xl shadow-xl shadow-slate-100">
+                <!-- Bottom card two Image -->
+                <div class="col-span-2 md:col-span-1">
+                  <img class="object-cover w-full h-48 rounded-3xl" src="assets/img4.png" alt="">
+                </div>
+                <!-- Bottom card two Content -->
+                <div class="col-span-2 md:col-span-1">
+                  <h2 class="text-xl font-bold">Residential</h2>
+                  <p class="text-textColor font-medium my-4">Creating elegant residential spaces with enduring style.</p>
+                  <!-- Bottom card two Button -->
+                  <div class="flex items-center gap-2">
+                    <a class="font-extrabold bg-white border-none rounded-full flex">View Details</a>
+                    <div class="flex w-8 h-8 p-2 items-center justify-center bg-brandColor rounded-full">
+                      <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Bottom Card Three-->
+              <div class="order-3 md:col-span-2 lg:col-span-1 p-6 border border-slate-200 rounded-3xl shadow-xl shadow-slate-100">
+                <img class="object-cover w-full h-48 rounded-3xl" src="assets/img5.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
        <!-- Contact section start -->
         <section class="bg-[url('assets/bg.jpg')] w-full bg-cover bg-no-repeat border-8 border-white">
           <div class="grid grid-cols-1 gap-8 px-5 lg:px-10 py-8 lg:py-24 container m-auto">
@@ -218,28 +299,27 @@
             </div>
             <!-- contact form -->
              <div>
-              <form class="max-w-4xl mx-auto grid gap-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                  <input class="py-4 px-6 w-full text-sm text-black bg-[#fdfdfd] rounded-3xl"  type="text" placeholder="First Name*" >
-                  <input class="py-4 px-6 w-full text-sm text-black bg-[#fdfdfd] rounded-3xl"  type="text" placeholder="Last Name*" >
-                </div>
-                <div class="grid md:grid-cols-2 gap-6">
-                  <input class="py-4 px-6 w-full text-sm text-black bg-[#fdfdfd] rounded-3xl"  type="number" placeholder="Phone Number*" >
-                  <input class="py-4 px-6 w-full text-sm text-black bg-[#fdfdfd] rounded-3xl"  type="email" placeholder="Email Number*">
-                </div>
-                <textarea rows="8" class="block py-4 px-6  w-full text-sm text-black bg-[#fdfdfd] rounded-3xl" placeholder="Write your message here"></textarea>
-                <div class="cursor-pointer" type="submit">
-                  <a class="btn w-full font-extrabold bg-brandColor border-none rounded-full flex">Send Mail
-                    <div class="flex w-8 h-8 p-2 items-center justify-center bg-black rounded-full">
-                      <i class=" text-white fa-solid fa-arrow-right -rotate-45"></i>
-                    </div>
-                  </a>
-                </div>
-              </form>
+                <form class="max-w-4xl mx-auto grid gap-6">
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <input class="py-4 px-6 w-full text-sm text-black bg-[#fdfdfd] rounded-3xl"  type="text" placeholder="First Name*" >
+                    <input class="py-4 px-6 w-full text-sm text-black bg-[#fdfdfd] rounded-3xl"  type="text" placeholder="Last Name*" >
+                  </div>
+                  <div class="grid md:grid-cols-2 gap-6">
+                    <input class="py-4 px-6 w-full text-sm text-black bg-[#fdfdfd] rounded-3xl"  type="number" placeholder="Phone Number*" >
+                    <input class="py-4 px-6 w-full text-sm text-black bg-[#fdfdfd] rounded-3xl"  type="email" placeholder="Email Number*">
+                  </div>
+                  <textarea rows="8" class="block py-4 px-6  w-full text-sm text-black bg-[#fdfdfd] rounded-3xl" placeholder="Write your message here"></textarea>
+                  <div class="cursor-pointer" type="submit">
+                    <a class="btn w-full font-extrabold bg-brandColor border-none rounded-full flex">Send Mail
+                      <div class="flex w-8 h-8 p-2 items-center justify-center bg-black rounded-full">
+                        <i class=" text-white fa-solid fa-arrow-right -rotate-45"></i>
+                      </div>
+                    </a>
+                  </div>
+                </form>
              </div>
           </div>
         </section>
-       <section class="h-3"></section>
     </main>
 
     <!-- Footer section start -->
